@@ -52,7 +52,11 @@ def part2():
         forest = list(map(lambda l: l.strip(), f.readlines()))
         forest = [[int(c) for c in row] for row in forest]
         transpose_forest = transpose(forest)
-
         
+        blocking_trees_right = [next_greater_right(row) for row in forest]
+        print(blocking_trees_right)
 
-part1()
+
+
+# part1()
+part2()
